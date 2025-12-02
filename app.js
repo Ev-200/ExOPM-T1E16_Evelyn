@@ -54,5 +54,10 @@ while (!ganhou) {
 
         adivinhar = prompt("Adivinha a letra, entre A e Z")
         adivinhar = Math.floor(Number(adivinhar))
+    } else if (letraSorte < adivinhar) {
+        alert("muito acima")
+
+        adivinhar = prompt("Adivinha a letra, entre A e Z")
+        adivinhar = Math.floor(Number(adivinhar))
     }
 }
