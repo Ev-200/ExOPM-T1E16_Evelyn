@@ -9,7 +9,7 @@ console.log(letraSorte)
 
 let adivinhar = prompt("Adivinha uma letra, entre A e Z")
 
-console.log("letra:" + letraSorte, "letra de visitante:" + adivinhar)
+console.log("letra sorte:" + letraSorte, "letra de visitante:" + adivinhar)
 
 // let a = 1
 // let b = 2
@@ -23,8 +23,8 @@ console.log("letra:" + letraSorte, "letra de visitante:" + adivinhar)
 // let j = 10
 // let k = 11
 // let l = 12
-// let m = 13
-// // let n = 14
+// let m = 13l
+// let n = 14
 // let o = 15
 // let p = 16
 // let q = 17
@@ -48,16 +48,14 @@ while (!ganhou) {
     else if (letraSorte > adivinhar && letraSorte - adivinhar <= 2 || letraSorte < adivinhar && adivinhar - letraSorte <= 2) {
         alert("Quase lá!!")
         adivinhar = prompt("Adivinha a letra, entre A e Z")
-        adivinhar = Math.floor(Number(adivinhar))
     } else if (letraSorte > adivinhar) {
         alert("muito abaixo")
-
         adivinhar = prompt("Adivinha a letra, entre A e Z")
-        adivinhar = Math.floor(Number(adivinhar))
+
     } else if (letraSorte < adivinhar) {
         alert("muito acima")
-
         adivinhar = prompt("Adivinha a letra, entre A e Z")
-        adivinhar = Math.floor(Number(adivinhar))
     }
+
+    console.log("letra:" + letraSorte, "letra de visitante:" + adivinhar)
 }
